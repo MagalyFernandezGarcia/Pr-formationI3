@@ -1,0 +1,108 @@
+a{
+    text-decoration: none;
+    color: #C2D076;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #474B24;
+  
+}
+
+.navBarPart1, .navBarPart2{
+    display: flex;
+    align-items: center;
+
+}
+.navBarPart2{
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logo{
+    width: 8%;
+    height: auto;
+}
+
+.logoTitle{
+    color: #C2D076;
+}
+
+
+.siteTitle{
+   background-color: #98c05c;
+   text-align: center;
+   padding-bottom: 5%;
+   padding-top: 5%;
+}
+
+.textTitle{
+    border-style: solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.cadreContainer{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(./images/herbe.avif);
+    background-repeat: no-repeat;
+    padding-bottom: 20%;
+    flex-wrap: wrap;
+    height: 70vh;
+   
+}
+
+.cadre{
+    border-style: solid;
+    border-radius: 30px;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    
+}
+.cadre:hover{
+    transform: scale(1.1);
+    background-color: rgb(142, 192, 66);
+}
+
+.nainImage{
+    width: 30%;
+    height: auto;
+    padding-bottom: 5%;
+ 
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #474B24;
+    height: 40px;
+}
+
+.copyright{
+    display: flex;
+    color: #C2D076; 
+    align-items:flex-start;
+    max-height: fit-content
+}
+
+.logoLink{
+    height: 100%;
+    padding-left: 1rem;
+}
+
+.logoAndLinkContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}

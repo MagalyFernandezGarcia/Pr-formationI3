@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./easyMode.css">
+    <script defer src="./easyMode.js"></script>
+</head>
+
+<body>
+    <div class="navBar ">
+        <div class="title">KonekoChi</div>
+        <a href="../home.html" class="home">Accueil</a>
+    </div>
+
+    <!-- Tuto -->
+
+    <div id="myModal" class="modal">
+
+        <div id="welcome">
+            <div class="modal-content" id="modalWelcome">
+
+                <div>Bienvenue sur la page de votre chat.</div>
+                <div>Apprenons comment en prendre soin afin de l'adopter</div>
+                <button class="next" id="welcomeBtn">Suite</button>
+
+            </div>
+        </div>
+
+
+        <div id="presentCat">
+
+            <div class="modal-content" id="modalCat">
+                <div>Voici votre chaton</div>
+
+
+                <button class="next" id="catBtn">Suite</button>
+            </div>
+
+        </div>
+
+
+        <div id="presentJauge">
+            <div class="modal-content" id="modalJauge">
+
+                <div>Pour pouvoir l'adopter, vous devrez combler ses besoins représentés par ces barres.
+                </div>
+
+
+                <button class="next" id="jaugeBtn">Suite</button>
+            </div>
+        </div>
+
+
+        <div id="presentEvent">
+            <div class="modal-content" id="modalEvent">
+                <div>Pour remplir ces barres, vous devrez réagir correctement aux évènements qui apparaitrons au centre
+                    de l'écran.</div>
+
+                <button class="next" id="eventBtn">Suite</button>
+            </div>
+        </div>
+
+        <div id="presentTool">
+            <div class="modal-content" id="modalTool">
+                <div>Choisissez le bon outil pour réagir à la situation pour gagner la confiance de votre chaton</div>
+
+                <button class="next" id="toolBtn">Suite</button>
+            </div>
+        </div>
+
+
+        <div id="play">
+            <div class="modal-content" id="modalPlay">
+                <div>A vous de jouer à présent !</div>
+                <button class="next" id="startBtn">Commencer le jeu</button>
+            </div>
+        </div>
+
+
+        <!-- Fin du jeu -->
+
+        <div id="endGame">
+            <div class="modal-content">
+                <div>Félicitation, vous avez réussi à apprivoisé votre chat !</div>
+                <a href="../home.html">Retourner à l'accueil</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Jeu -->
+
+
+    <div class="presentBoxes">
+        <div class="rightSide">
+            <div id="box">
+                <img src="../images/kitten.png" alt="chaton" class="easyMode" id="kitten">
+                <img src="../images/happy.png" alt="coeur content" id="happy">
+                <img src="../images/sad.png" alt="coeur triste" id="sad">
+
+            </div>
+            <div id="toolBox" >
+                <img src="../images/coffre.png" alt="coffre à jouet">
+                <div id="toolList">
+                    <button id="foodBtn">
+                        <img src="../images/catFood.jpg" alt="gamelle">
+                    </button>
+                    <button id="cleanBtn">
+                        <img src="../images/balais.jpg" alt="gamelle">
+                    </button>
+                    <button id="petBtn">
+                        <img src="../images/illustration-main_498740-2994.jpg" alt="main">
+                    </button>
+                    <button id="playBtn">
+                        <img src="../images/boule-fil_444196-20125.avif" alt="Pelotte de laine">
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="imgEvent">
+            <img src="../images/bol.png" alt="event" id="event">
+
+
+        </div>
+
+        <div id="jaugeContainer">
+
+            <div class="stickers">Faim</div>
+            <div class="myProgress">
+                <div id="foodJauge"></div>
+            </div>
+
+            <div class="stickers">Hygiène</div>
+            <div class="myProgress">
+                <div id="cleanJauge"></div>
+            </div>
+
+            <div class="stickers">Affection</div>
+            <div class="myProgress">
+                <div id="petJauge"></div>
+            </div>
+
+            <div class="stickers">Amusement</div>
+            <div class="myProgress">
+                <div id="playJauge"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer"></div>
+</body>
+
+</html>

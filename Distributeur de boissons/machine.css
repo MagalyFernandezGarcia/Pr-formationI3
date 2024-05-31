@@ -1,0 +1,93 @@
+.fullMachine{
+   
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.view{
+    
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.view img{
+    height: 20vh;
+    
+}
+
+.boissonsRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    height: 30vh;
+  
+    
+}
+
+
+.boisson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.stock{
+    border-style: solid;
+    border-radius: 100%;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+}
+
+.code{
+    border-style: solid;
+    border-radius: 10%;
+    width: 5vw;
+    text-align: center;
+}
+
+
+.réception{
+    background-color: black;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.selection {
+    background-color: whitesmoke;
+    height: 2vh;
+    width: 10vw;
+}
+
+.choiceSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.numpad{
+    display: flex;
+    flex-wrap: wrap;
+    width: 5vw;
+    height: 10vh;
+}

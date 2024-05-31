@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel{
+   width: 70%;
+   height: 60%;
+   background-color: red;
+   position: relative;
+}
+
+.carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.previpous, .next {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    font-size: 4rem;
+    top: calc(50% - 2.5rem);
+    background-color: rgba(255,255,255,0.475);
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.right{
+    right: 0;
+
+}
+
+.dots{
+    position: absolute;
+    bottom: 0;
+    left: calc(50% -5rem);
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.dot{
+    width: 1rem;
+    height: 1rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.active{
+    background-color: white;
+}

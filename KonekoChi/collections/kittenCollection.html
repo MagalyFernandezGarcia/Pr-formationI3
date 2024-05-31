@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./kittenCollection.css">
+    <script defer src="./kittenCollection.js"></script>
+</head>
+
+<body>
+
+
+    <div class="navBar ">
+        <div class="title">KonekoChi</div>
+        <a href="../home.html" class="home">Accueil</a>
+
+    </div>
+    <div class="siteTitle">
+
+        <div>Bienvenue dans votre collection. Cliquez sur la photo d'un chaton pour obtenir des informations sur lui
+        </div>
+
+    </div>
+
+
+    <div id="presentBoxes">
+        <div class="box" >
+
+            <button id="oliver">
+                <img src="../images/kitten.png" alt="chaton" >
+            </button>
+        </div>
+        <div class="box" >
+
+            <button id="patrick">
+                <img src="../images/siamois.png" alt="chaton" >
+            </button>
+        </div>
+        <div class="box" >
+
+            <button id="edward">
+                <img src="../images/chatonTigre.png" alt="chaton" >
+            </button>
+        </div>
+
+        <div class="box" >
+            <button id="bob">
+                <img src="../images/bobcat.png" alt="chaton" class="easyMode" >
+            </button>
+        </div>
+
+        <div id="modal" class="modal">
+            <div id="modalOliver">
+
+
+                <img src="../images/kitten.png" alt="oliver">
+                <div>
+                    <div>Nom: Oliver</div>
+                    <div>Age: 2 mois</div>
+                    <div>Oliver est un jeune chaton qui peut se montrer timide au premier abord et très affectueux
+                        ensuite.</div>
+                </div>
+
+                <button class="close" id="closeOliver">Retour</button>
+
+            </div>
+
+
+            <div id="modalPatrick">
+
+
+                <img src="../images/siamois.png" alt="Patrick">
+                <div>
+                    <div>Nom: Patrick</div>
+                    <div>Age: 4 mois</div>
+                    <div>Patrick est un jeune chat siamois fidèle et affectueux qui adore dormir dans son panier près du
+                        feu
+                    </div>
+                </div>
+
+                <button class="close" id="closePatrick">Retour</button>
+
+            </div>
+
+
+            <div id="modalEdward">
+
+                <img src="../images/chatonTigre.png" alt="Edward">
+                <div>
+                    <div>Nom: Edward</div>
+                    <div>Age: 2.5 mois</div>
+                    <div>Edward n'en a pas l'air comme ça mais il est très facétieux et cachera ses jouets dans vos
+                        chaussures si vous n'y prenez pas garde</div>
+                </div>
+
+                <button class="close" id="closeEdward">Retour</button>
+
+
+            </div>
+
+            <div id="modalBob">
+
+                <img src="../images/bobcat.png" alt="oliver">
+                <div>
+                    <div>Nom: Bob</div>
+                    <div>Age: 1 mois</div>
+                    <div>La maman de Bob a du sang de lynx dans les veines ce qui donne un très gros chaton plein
+                        d'affection</div>
+                </div>
+
+                <button class="close" id="closeBob">Retour</button>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="footer"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+a{
+    text-decoration: none;
+    color: #003052;
+    
+}
+
+a:visited{
+    color :#003052;
+
+}
+
+a:hover{
+    color: #0362a7;
+}
+.navigationBar{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;  
+    margin-bottom: 5%;
+
+}
+
+.pageTitle{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 100vw; 
+}
+
+.imageLandscape{
+    width: 40vw;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: #0362a7;
+    margin-right: 2%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 5%;
+    width: 40vw;
+    text-align: center;
+}
+
+.textTitle{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}

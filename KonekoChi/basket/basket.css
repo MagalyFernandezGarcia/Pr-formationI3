@@ -1,0 +1,307 @@
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+
+}
+
+
+.navBar {
+    background-color: #192A51;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #F5E6E8;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+
+
+.home {
+    position: absolute;
+    top: 1.25rem;
+    left: 0.5rem;
+    color: #F5E6E8;
+    text-decoration: none;
+}
+
+.siteTitle {
+    background-color: #AAA1C8;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #F5E6E8;
+}
+
+.presentBoxes {
+    background-color: #967AA1;
+    height: 85vh;
+    display: flex;
+    max-height: 70vh;
+    max-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+
+}
+
+
+
+#kittenBox {
+    
+    height: 20vh;
+    width: 10vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+
+
+}
+
+.collectionBoxes a{
+    background-color: #AAA1C8;
+    color: #192A51;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    margin-top: 60%;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+#catBox {
+    height: 20vh;
+    width: 10vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+#bigCatBox {
+    height: 20vh;
+    width: 10vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.colProgression {
+    width: 100%;
+    background-color: #D5C6E0;
+    border-style: solid;
+    color: #192A51;
+}
+
+#kittenJauge {
+    width: 0%;
+    height: 30px;
+    background-color: #AAA1C8;
+}
+#catJauge {
+    width: 0%;
+    height: 30px;
+    background-color: #AAA1C8;
+}
+#bigCatJauge {
+    width: 0%;
+    height: 30px;
+    background-color: #AAA1C8;
+}
+
+#basketBtn {
+    background-color: #967AA1;
+    border: none;
+    cursor: pointer;
+    height: 50vh;
+}
+
+
+
+
+
+.footer {
+    background-color: #192A51;
+    height: 7vh;
+}
+
+
+
+/* Animation */
+
+.panier {
+
+    object-fit: contain;
+    height: 50%;
+
+}
+
+.animationBasket {
+    position: relative;
+    animation-name: basket;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes basket {
+
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 140px;
+    }
+
+}
+
+.animationKittenCollection {
+
+    animation-name: kittenCollection;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kittenCollection {
+
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        top: 1%;
+    }
+
+    100% {
+        top: 1%;
+        left: 20%;
+    }
+
+
+}
+
+.animationCatCollection {
+
+    animation-name: catCollection;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes catCollection {
+
+    100% {
+        top: 1%;
+    }
+
+
+}
+
+.animationBigCatCollection {
+
+    animation-name: bigCatCollection;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bigCatCollection {
+
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        top: 1%;
+    }
+
+    100% {
+        top: 1%;
+        left: 70%;
+    }
+
+
+}
+
+
+/* Modal */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+
+
+  .modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    width: 80vw;
+
+    
+  }
+
+
+  #modalFinalGame {
+    
+    display: none;
+    width: 80%; 
+    margin: 15% auto; 
+    padding: 20px;
+    
+   
+ }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,97 @@
+a{
+    text-decoration: none;
+    color:#003052
+}
+
+a:visited{
+    color :#003052;
+
+}
+
+a:hover{
+    color: #0362a7;
+}
+
+body{
+    background-image: url('./images/plage.avif');
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.title{
+    border-bottom: 0.25rem;
+    border-bottom: solid;
+    color : #003052;
+    font-family: inconsolata;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 9%;
+    text-shadow: #01253f  1px 1px ;
+    
+    
+}
+
+.summary{
+    font-family: inconsolata;
+    color :#003052;
+    text-shadow: #01253f  0.5px 1px ;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+
+
+.tripBox{
+    height: 100px;
+    width: 120px;
+    border: solid ;
+    border-color: lightblue;
+    border-radius: 5px;
+    padding-top: 8px;
+}
+
+.tripDone, .tripToDo, .mightTrip{
+    background-size: cover;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-bottom: 38%;
+    background-repeat: no-repeat;
+    color: #01253f;
+     
+}
+.return{
+    display: none;
+
+}
+.tripBox:hover{
+    transform: scale(1.1);
+  
+}
+.tripBox:hover .developp {
+    display: block;
+    text-align: center; 
+    padding-top: 20%;
+    padding-bottom: 20%;
+    
+  
+}
+
+
+.tripToDo{
+    background-image: url('./images/road.avif');
+    
+}
+
+.mightTrip{
+    background-image: url('./images/mountain.avif');
+  
+}
+
+.tripDone{
+    background-image: url('./images/coucherDeSoleil.avif');
+}

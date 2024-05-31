@@ -1,0 +1,312 @@
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    
+   
+}
+
+/* partie tuto */
+
+
+.modal {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+
+
+  .modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+   
+   
+    
+  }
+
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #welcome {
+    display: block;
+    width: 80%; 
+    margin: 15% auto; 
+    padding: 20px;
+    
+   
+ }
+
+ #presentCat{
+    display: none;
+    width: 30%;
+    margin: 10% auto;
+
+    
+ }
+
+
+ #presentJauge{
+    display: none;
+    width: 40%;
+    margin: 10% auto;
+ 
+ }
+
+
+
+ #presentEvent{
+    display: none;
+    width: 50%; 
+    margin: 7% auto; 
+    padding: 20px;
+ }
+
+
+
+#presentTool{
+    display: none;
+    width: 50%; 
+    margin: 8% auto; 
+    padding: 20px;
+
+}
+
+
+#play{
+    display: none;
+    width: 80%; 
+    margin: 15% auto;
+    padding: 20px;
+}
+
+
+#endGame {
+    display: none;
+    width: 80%; 
+    margin: 15% auto; 
+    padding: 20px;
+    
+   
+ }
+
+
+
+
+
+/* partie jeu */
+
+.navBar{
+    background-color: #192A51;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #F5E6E8;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 3rem ;
+    
+}
+
+
+.home{
+    position: absolute;
+    top: 1.25rem;
+    left: 0.5rem;
+    color: #F5E6E8;
+    text-decoration: none;
+}
+
+.presentBoxes{
+    background-color: #967AA1;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    max-height: 100vh;
+    max-width: 100vw;
+    align-items: center;
+    
+    
+}
+
+#box{
+    width: 20vw;
+    height: 50vh;
+    border-style: solid;
+    position: relative;
+    z-index: 0;
+    background-color: whitesmoke;
+    
+}
+
+
+
+
+.easyMode{
+    object-position: 34%;
+    object-fit: cover;
+    width: 20vw;
+    height: 50vh;
+    
+}
+
+#happy{
+    width: 10vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 80%;
+    left: 105%;
+    display: none;
+}
+
+#sad{
+    width: 10vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 80%;
+    left: 105%;
+    display: none;
+
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   
+}
+
+
+
+#toolBox img {
+    height: 25vh;
+    width: 15vw;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    
+}
+
+#toolList{
+    display: none;
+    position: absolute;
+    
+
+}
+
+#toolList img{
+    width: 3vw;
+    height: 5vh;
+}
+
+#toolBox:hover #toolList{
+    display:block ;
+}
+
+
+
+.show{
+    display: block;
+}
+
+
+
+#imgEvent{
+    position: relative;
+    z-index: 0;
+}
+
+#imgEvent img{
+    width: 18vw;
+    height: 30vh;
+    
+
+}
+
+
+
+
+#jaugeContainer{
+    width: 17vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+    
+    
+    
+}
+
+.myProgress {
+    width: 100%;
+    background-color: #D5C6E0;
+    border-style: solid;
+    color: #192A51;
+   
+    
+    
+  }
+
+  .stickers{
+    color: #F5E6E8;
+    
+
+  }
+  
+ #foodJauge{
+    width: 5%;
+    height: 30px;
+    background-color: #AAA1C8;
+    
+ }
+ #cleanJauge{
+    width: 5%;
+    height: 30px;
+    background-color: #AAA1C8;
+ }
+ #petJauge{
+    width: 5%;
+    height: 30px;
+    background-color: #AAA1C8;
+ }
+ #playJauge{
+    width: 5%;
+    height: 30px;
+    background-color: #AAA1C8;
+ }
+
+ .footer{
+    background-color: #192A51;
+    height: 7vh ;
+}
+

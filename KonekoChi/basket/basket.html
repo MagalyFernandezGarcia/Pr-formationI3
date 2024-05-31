@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./basket.css">
+    <script defer src="./basket.js"></script>
+</head>
+
+<body>
+    <div class="navBar ">
+        <div class="title">KonekoChi</div>
+        <a href="../home.html" class="home">Accueil</a>
+    </div>
+
+    <div class="siteTitle">
+        <div>Ouvre le panier pour voir l'évolution de tes collections</div>
+
+    </div>
+
+
+    <div class="presentBoxes">
+
+        <div class="collectionBoxes">
+            <div id="kittenBox">
+                <div class="colProgression">
+                    <div id="kittenJauge"></div>
+                </div>
+                <a href="../collections/kittenCollection.html">Voir les chatons apprivoisés</a>
+            </div>
+            <div id="catBox">
+                <div class="colProgression">
+                    <div id="catJauge"></div>
+                </div>
+                <a href="../collections/catCollection.html">Voir les chats apprivoisés</a>
+            </div>
+            <div id="bigCatBox">
+                <div class="colProgression">
+                    <div id="bigCatJauge"></div>
+                </div>
+                <a href="../collections/bigCatCollection.html">Voir les grands félins apprivoisés</a>
+            </div>
+
+        </div>
+
+        <button id="basketBtn">
+            <img src="../images/panier.png" alt="panier en osier" class="panier" id="basketImg">
+        </button>
+
+        <div id="myModal" class="modal">
+
+            <div id="modalFinalGame">
+                <div class="modal-content">
+
+                    <div>Vous avez fini le jeu, toutes les collections sont complètes !</div>
+
+                    <a href="../home.html">Retourner à l'accueil</a>
+                    <button class="next" id="finalGame">Recommencer une partie</button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="footer"></div>
+</body>
+
+</html>
